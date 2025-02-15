@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hi Baby!</strong>
+                        <p>
+							To my favorite person, my answered prayer, my pahinga, 
+							and the one I love the most—happiest birthday! May 
+							this birthday be one of the most memorable for you. I am
+							truly grateful to God for bringing you into my life. To the 
+							man who loved me after heartbreak, thank you for everything 
+							you didn’t have to do. Thank you for bringing me peace in my 
+							chaotic world. May all the desires of your heart come true. 
+							Andito lang ako, palagi kitang aawayin at susungitan. 
+							Happiest birthday, baby. Mahal kita palagi!<3
+							
+					
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
